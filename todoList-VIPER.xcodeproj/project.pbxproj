@@ -1,0 +1,1127 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		429187CF2FFD6BB33799EBF3 /* Pods_todoList_VIPERTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3E7AFAB1FE8C35D020AC9A5 /* Pods_todoList_VIPERTests.framework */; };
+		7D577212ABA4B91524774937 /* Pods_todoList_VIPER.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B8D1EB21663735F8864175F /* Pods_todoList_VIPER.framework */; };
+		B4262BC62894D26B0002D81F /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4262BC52894D26B0002D81F /* Date+Extensions.swift */; };
+		B4262BC82894D2850002D81F /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4262BC72894D2850002D81F /* String+Extensions.swift */; };
+		B4262BCA2894D2C50002D81F /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4262BC92894D2C50002D81F /* UIViewController+Extensions.swift */; };
+		B4262BD52894D6ED0002D81F /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4262BD42894D6ED0002D81F /* Todo.swift */; };
+		B4262BD72894D7060002D81F /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4262BD62894D7060002D81F /* Task.swift */; };
+		B4262BD92894D7CC0002D81F /* TodoListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4262BD82894D7CC0002D81F /* TodoListProtocols.swift */; };
+		B4262BDB2894D8E70002D81F /* TodoListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4262BDA2894D8E70002D81F /* TodoListRouter.swift */; };
+		B4262BDD2894DB2E0002D81F /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4262BDC2894DB2E0002D81F /* TodoListViewController.swift */; };
+		B4262BEB28952B480002D81F /* TodoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4262BEA28952B480002D81F /* TodoViewModel.swift */; };
+		B4262BED28952B5F0002D81F /* TodoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4262BEC28952B5F0002D81F /* TodoListViewModel.swift */; };
+		B4262BEF289D15950002D81F /* TodoListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4262BEE289D15950002D81F /* TodoListPresenter.swift */; };
+		B4262BF1289D165D0002D81F /* TodoListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4262BF0289D165D0002D81F /* TodoListInteractor.swift */; };
+		B4262BF3289D17100002D81F /* TodoListLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4262BF2289D17100002D81F /* TodoListLocalDataManager.swift */; };
+		B4262BF628A4A7370002D81F /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4262BF528A4A7370002D81F /* Utility.swift */; };
+		B4262BF828A4BB720002D81F /* TodoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4262BF728A4BB720002D81F /* TodoTableViewCell.xib */; };
+		B4262BFA28A4BBFB0002D81F /* TodoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4262BF928A4BBFB0002D81F /* TodoTableViewCell.swift */; };
+		B4262BFD28A62CBD0002D81F /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4262BFC28A62CBD0002D81F /* AddTaskViewController.swift */; };
+		B4262C0128A637D70002D81F /* AddTodoProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4262C0028A637D70002D81F /* AddTodoProtocols.swift */; };
+		B4262C0428A63A9D0002D81F /* AddTodoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4262C0328A63A9D0002D81F /* AddTodoRouter.swift */; };
+		B4262C0928A63E3D0002D81F /* AddTodoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4262C0828A63E3D0002D81F /* AddTodoPresenter.swift */; };
+		B4262C0B28A63EBD0002D81F /* AddTodoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4262C0A28A63EBD0002D81F /* AddTodoInteractor.swift */; };
+		B4262C0E28A63F010002D81F /* AddTodoLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4262C0D28A63F010002D81F /* AddTodoLocalDataManager.swift */; };
+		B4262C1428A7C8730002D81F /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4262C1328A7C8730002D81F /* CalendarViewController.swift */; };
+		B4262C1728A7CEAF0002D81F /* CalendarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4262C1628A7CEAF0002D81F /* CalendarRouter.swift */; };
+		B4262C1A28A7CEC80002D81F /* CalendarProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4262C1928A7CEC80002D81F /* CalendarProtocols.swift */; };
+		B4262C2028A7D0B00002D81F /* CalendarLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4262C1F28A7D0B00002D81F /* CalendarLocalDataManager.swift */; };
+		B4262C2228A7D0E50002D81F /* CalendarInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4262C2128A7D0E50002D81F /* CalendarInteractor.swift */; };
+		B4262C2428A7D10F0002D81F /* CalendarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4262C2328A7D10F0002D81F /* CalendarPresenter.swift */; };
+		B4E93A2A2893DCA20058C4F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E93A292893DCA20058C4F9 /* AppDelegate.swift */; };
+		B4E93A2C2893DCA20058C4F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E93A2B2893DCA20058C4F9 /* SceneDelegate.swift */; };
+		B4E93A312893DCA20058C4F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4E93A2F2893DCA20058C4F9 /* Main.storyboard */; };
+		B4E93A332893DCA40058C4F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4E93A322893DCA40058C4F9 /* Assets.xcassets */; };
+		B4E93A362893DCA40058C4F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4E93A342893DCA40058C4F9 /* LaunchScreen.storyboard */; };
+		B4E93A412893DCA40058C4F9 /* todoList_VIPERTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E93A402893DCA40058C4F9 /* todoList_VIPERTests.swift */; };
+		B4E93A4B2893DCA40058C4F9 /* todoList_VIPERUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E93A4A2893DCA40058C4F9 /* todoList_VIPERUITests.swift */; };
+		B4E93A4D2893DCA40058C4F9 /* todoList_VIPERUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E93A4C2893DCA40058C4F9 /* todoList_VIPERUITestsLaunchTests.swift */; };
+		BB774E2058F35C40FE83BCB9 /* Pods_todoList_VIPER_todoList_VIPERUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA5B2B34AFF716C96B77DB1E /* Pods_todoList_VIPER_todoList_VIPERUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B4E93A3D2893DCA40058C4F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4E93A1E2893DCA20058C4F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B4E93A252893DCA20058C4F9;
+			remoteInfo = "todoList-VIPER";
+		};
+		B4E93A472893DCA40058C4F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4E93A1E2893DCA20058C4F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B4E93A252893DCA20058C4F9;
+			remoteInfo = "todoList-VIPER";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2B8D1EB21663735F8864175F /* Pods_todoList_VIPER.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_todoList_VIPER.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		36B4FA9E2D7C2E2CEA1990E8 /* Pods-todoList-VIPER-todoList-VIPERUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-todoList-VIPER-todoList-VIPERUITests.debug.xcconfig"; path = "Target Support Files/Pods-todoList-VIPER-todoList-VIPERUITests/Pods-todoList-VIPER-todoList-VIPERUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		614B8C1B0B94408559618476 /* Pods-todoList-VIPERTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-todoList-VIPERTests.debug.xcconfig"; path = "Target Support Files/Pods-todoList-VIPERTests/Pods-todoList-VIPERTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6E03FA85E5DE8BC6AA1D5FF6 /* Pods-todoList-VIPERTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-todoList-VIPERTests.release.xcconfig"; path = "Target Support Files/Pods-todoList-VIPERTests/Pods-todoList-VIPERTests.release.xcconfig"; sourceTree = "<group>"; };
+		79576746DD95083A377C4CC6 /* Pods-todoList-VIPER-todoList-VIPERUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-todoList-VIPER-todoList-VIPERUITests.release.xcconfig"; path = "Target Support Files/Pods-todoList-VIPER-todoList-VIPERUITests/Pods-todoList-VIPER-todoList-VIPERUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7C6147A70CA35F1C35DA2FCF /* Pods-todoList-VIPER.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-todoList-VIPER.release.xcconfig"; path = "Target Support Files/Pods-todoList-VIPER/Pods-todoList-VIPER.release.xcconfig"; sourceTree = "<group>"; };
+		B3E7AFAB1FE8C35D020AC9A5 /* Pods_todoList_VIPERTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_todoList_VIPERTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4262BC52894D26B0002D81F /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		B4262BC72894D2850002D81F /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		B4262BC92894D2C50002D81F /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		B4262BD42894D6ED0002D81F /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		B4262BD62894D7060002D81F /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		B4262BD82894D7CC0002D81F /* TodoListProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListProtocols.swift; sourceTree = "<group>"; };
+		B4262BDA2894D8E70002D81F /* TodoListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListRouter.swift; sourceTree = "<group>"; };
+		B4262BDC2894DB2E0002D81F /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
+		B4262BEA28952B480002D81F /* TodoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewModel.swift; sourceTree = "<group>"; };
+		B4262BEC28952B5F0002D81F /* TodoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewModel.swift; sourceTree = "<group>"; };
+		B4262BEE289D15950002D81F /* TodoListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListPresenter.swift; sourceTree = "<group>"; };
+		B4262BF0289D165D0002D81F /* TodoListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListInteractor.swift; sourceTree = "<group>"; };
+		B4262BF2289D17100002D81F /* TodoListLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListLocalDataManager.swift; sourceTree = "<group>"; };
+		B4262BF528A4A7370002D81F /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		B4262BF728A4BB720002D81F /* TodoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodoTableViewCell.xib; sourceTree = "<group>"; };
+		B4262BF928A4BBFB0002D81F /* TodoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTableViewCell.swift; sourceTree = "<group>"; };
+		B4262BFC28A62CBD0002D81F /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
+		B4262C0028A637D70002D81F /* AddTodoProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoProtocols.swift; sourceTree = "<group>"; };
+		B4262C0328A63A9D0002D81F /* AddTodoRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoRouter.swift; sourceTree = "<group>"; };
+		B4262C0828A63E3D0002D81F /* AddTodoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoPresenter.swift; sourceTree = "<group>"; };
+		B4262C0A28A63EBD0002D81F /* AddTodoInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoInteractor.swift; sourceTree = "<group>"; };
+		B4262C0D28A63F010002D81F /* AddTodoLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoLocalDataManager.swift; sourceTree = "<group>"; };
+		B4262C1328A7C8730002D81F /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		B4262C1628A7CEAF0002D81F /* CalendarRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarRouter.swift; sourceTree = "<group>"; };
+		B4262C1928A7CEC80002D81F /* CalendarProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarProtocols.swift; sourceTree = "<group>"; };
+		B4262C1F28A7D0B00002D81F /* CalendarLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarLocalDataManager.swift; sourceTree = "<group>"; };
+		B4262C2128A7D0E50002D81F /* CalendarInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarInteractor.swift; sourceTree = "<group>"; };
+		B4262C2328A7D10F0002D81F /* CalendarPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarPresenter.swift; sourceTree = "<group>"; };
+		B4E93A262893DCA20058C4F9 /* todoList-VIPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "todoList-VIPER.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4E93A292893DCA20058C4F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B4E93A2B2893DCA20058C4F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B4E93A302893DCA20058C4F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B4E93A322893DCA40058C4F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B4E93A352893DCA40058C4F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B4E93A372893DCA40058C4F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4E93A3C2893DCA40058C4F9 /* todoList-VIPERTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "todoList-VIPERTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4E93A402893DCA40058C4F9 /* todoList_VIPERTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todoList_VIPERTests.swift; sourceTree = "<group>"; };
+		B4E93A462893DCA40058C4F9 /* todoList-VIPERUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "todoList-VIPERUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4E93A4A2893DCA40058C4F9 /* todoList_VIPERUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todoList_VIPERUITests.swift; sourceTree = "<group>"; };
+		B4E93A4C2893DCA40058C4F9 /* todoList_VIPERUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todoList_VIPERUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EA5B2B34AFF716C96B77DB1E /* Pods_todoList_VIPER_todoList_VIPERUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_todoList_VIPER_todoList_VIPERUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDEDEE1B1AB581F182264B91 /* Pods-todoList-VIPER.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-todoList-VIPER.debug.xcconfig"; path = "Target Support Files/Pods-todoList-VIPER/Pods-todoList-VIPER.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B4E93A232893DCA20058C4F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D577212ABA4B91524774937 /* Pods_todoList_VIPER.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4E93A392893DCA40058C4F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				429187CF2FFD6BB33799EBF3 /* Pods_todoList_VIPERTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4E93A432893DCA40058C4F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB774E2058F35C40FE83BCB9 /* Pods_todoList_VIPER_todoList_VIPERUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09C8B8621BA179CC772B1691 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B8D1EB21663735F8864175F /* Pods_todoList_VIPER.framework */,
+				EA5B2B34AFF716C96B77DB1E /* Pods_todoList_VIPER_todoList_VIPERUITests.framework */,
+				B3E7AFAB1FE8C35D020AC9A5 /* Pods_todoList_VIPERTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A81B07DB032C6BEAC1EFEF76 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FDEDEE1B1AB581F182264B91 /* Pods-todoList-VIPER.debug.xcconfig */,
+				7C6147A70CA35F1C35DA2FCF /* Pods-todoList-VIPER.release.xcconfig */,
+				36B4FA9E2D7C2E2CEA1990E8 /* Pods-todoList-VIPER-todoList-VIPERUITests.debug.xcconfig */,
+				79576746DD95083A377C4CC6 /* Pods-todoList-VIPER-todoList-VIPERUITests.release.xcconfig */,
+				614B8C1B0B94408559618476 /* Pods-todoList-VIPERTests.debug.xcconfig */,
+				6E03FA85E5DE8BC6AA1D5FF6 /* Pods-todoList-VIPERTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B4262BC22894CFA80002D81F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B4E93A342893DCA40058C4F9 /* LaunchScreen.storyboard */,
+				B4E93A2F2893DCA20058C4F9 /* Main.storyboard */,
+				B4262BF728A4BB720002D81F /* TodoTableViewCell.xib */,
+				B4E93A322893DCA40058C4F9 /* Assets.xcassets */,
+				B4E93A372893DCA40058C4F9 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B4262BC32894D11B0002D81F /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				B4E93A292893DCA20058C4F9 /* AppDelegate.swift */,
+				B4E93A2B2893DCA20058C4F9 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		B4262BC42894D19E0002D81F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B4262BC52894D26B0002D81F /* Date+Extensions.swift */,
+				B4262BC72894D2850002D81F /* String+Extensions.swift */,
+				B4262BC92894D2C50002D81F /* UIViewController+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B4262BCB2894D4120002D81F /* TodoList */ = {
+			isa = PBXGroup;
+			children = (
+				B4262BD22894D4660002D81F /* Protocols */,
+				B4262BD02894D4520002D81F /* Router */,
+				B4262BD12894D4610002D81F /* View */,
+				B4262BCF2894D44E0002D81F /* Presenter */,
+				B4262BCE2894D43F0002D81F /* Interactor */,
+				B4262BCC2894D42E0002D81F /* DataManager */,
+			);
+			path = TodoList;
+			sourceTree = "<group>";
+		};
+		B4262BCC2894D42E0002D81F /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				B4262BCD2894D4380002D81F /* Local */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		B4262BCD2894D4380002D81F /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				B4262BF2289D17100002D81F /* TodoListLocalDataManager.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		B4262BCE2894D43F0002D81F /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				B4262BF0289D165D0002D81F /* TodoListInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		B4262BCF2894D44E0002D81F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B4262BEE289D15950002D81F /* TodoListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B4262BD02894D4520002D81F /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				B4262BDA2894D8E70002D81F /* TodoListRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		B4262BD12894D4610002D81F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B4262BDC2894DB2E0002D81F /* TodoListViewController.swift */,
+				B4262BF928A4BBFB0002D81F /* TodoTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B4262BD22894D4660002D81F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B4262BD82894D7CC0002D81F /* TodoListProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		B4262BD32894D6D20002D81F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B4262BD42894D6ED0002D81F /* Todo.swift */,
+				B4262BD62894D7060002D81F /* Task.swift */,
+				B4262BEA28952B480002D81F /* TodoViewModel.swift */,
+				B4262BEC28952B5F0002D81F /* TodoListViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B4262BF428A4A7230002D81F /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				B4262BF528A4A7370002D81F /* Utility.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		B4262BFB28A62C950002D81F /* AddTodo */ = {
+			isa = PBXGroup;
+			children = (
+				B4262BFF28A637A50002D81F /* Protocols */,
+				B4262C0228A63A840002D81F /* Router */,
+				B4262BFE28A637910002D81F /* View */,
+				B4262C0528A63E000002D81F /* Presenter */,
+				B4262C0628A63E0A0002D81F /* Interactor */,
+				B4262C0728A63E100002D81F /* DataManager */,
+			);
+			path = AddTodo;
+			sourceTree = "<group>";
+		};
+		B4262BFE28A637910002D81F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B4262BFC28A62CBD0002D81F /* AddTaskViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B4262BFF28A637A50002D81F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B4262C0028A637D70002D81F /* AddTodoProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		B4262C0228A63A840002D81F /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				B4262C0328A63A9D0002D81F /* AddTodoRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		B4262C0528A63E000002D81F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B4262C0828A63E3D0002D81F /* AddTodoPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B4262C0628A63E0A0002D81F /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				B4262C0A28A63EBD0002D81F /* AddTodoInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		B4262C0728A63E100002D81F /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				B4262C0C28A63EF20002D81F /* Local */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		B4262C0C28A63EF20002D81F /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				B4262C0D28A63F010002D81F /* AddTodoLocalDataManager.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		B4262C1128A7C8470002D81F /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				B4262C1828A7CEB60002D81F /* Protocols */,
+				B4262C1528A7CE890002D81F /* Router */,
+				B4262C1228A7C85E0002D81F /* View */,
+				B4262C1B28A7D0780002D81F /* Presenter */,
+				B4262C1C28A7D07C0002D81F /* Interactor */,
+				B4262C1D28A7D0830002D81F /* DataManager */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		B4262C1228A7C85E0002D81F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B4262C1328A7C8730002D81F /* CalendarViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B4262C1528A7CE890002D81F /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				B4262C1628A7CEAF0002D81F /* CalendarRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		B4262C1828A7CEB60002D81F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B4262C1928A7CEC80002D81F /* CalendarProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		B4262C1B28A7D0780002D81F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B4262C2328A7D10F0002D81F /* CalendarPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B4262C1C28A7D07C0002D81F /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				B4262C2128A7D0E50002D81F /* CalendarInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		B4262C1D28A7D0830002D81F /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				B4262C1E28A7D0890002D81F /* Local */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		B4262C1E28A7D0890002D81F /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				B4262C1F28A7D0B00002D81F /* CalendarLocalDataManager.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		B4262C2528A805690002D81F /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				B4262BCB2894D4120002D81F /* TodoList */,
+				B4262BFB28A62C950002D81F /* AddTodo */,
+				B4262C1128A7C8470002D81F /* Calendar */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		B4E93A1D2893DCA20058C4F9 = {
+			isa = PBXGroup;
+			children = (
+				B4E93A282893DCA20058C4F9 /* todoList-VIPER */,
+				B4E93A3F2893DCA40058C4F9 /* todoList-VIPERTests */,
+				B4E93A492893DCA40058C4F9 /* todoList-VIPERUITests */,
+				B4E93A272893DCA20058C4F9 /* Products */,
+				A81B07DB032C6BEAC1EFEF76 /* Pods */,
+				09C8B8621BA179CC772B1691 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B4E93A272893DCA20058C4F9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B4E93A262893DCA20058C4F9 /* todoList-VIPER.app */,
+				B4E93A3C2893DCA40058C4F9 /* todoList-VIPERTests.xctest */,
+				B4E93A462893DCA40058C4F9 /* todoList-VIPERUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B4E93A282893DCA20058C4F9 /* todoList-VIPER */ = {
+			isa = PBXGroup;
+			children = (
+				B4262BC32894D11B0002D81F /* AppDelegate */,
+				B4262BC22894CFA80002D81F /* Resources */,
+				B4262BC42894D19E0002D81F /* Extensions */,
+				B4262BF428A4A7230002D81F /* Utility */,
+				B4262BD32894D6D20002D81F /* Models */,
+				B4262C2528A805690002D81F /* Modules */,
+			);
+			path = "todoList-VIPER";
+			sourceTree = "<group>";
+		};
+		B4E93A3F2893DCA40058C4F9 /* todoList-VIPERTests */ = {
+			isa = PBXGroup;
+			children = (
+				B4E93A402893DCA40058C4F9 /* todoList_VIPERTests.swift */,
+			);
+			path = "todoList-VIPERTests";
+			sourceTree = "<group>";
+		};
+		B4E93A492893DCA40058C4F9 /* todoList-VIPERUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B4E93A4A2893DCA40058C4F9 /* todoList_VIPERUITests.swift */,
+				B4E93A4C2893DCA40058C4F9 /* todoList_VIPERUITestsLaunchTests.swift */,
+			);
+			path = "todoList-VIPERUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B4E93A252893DCA20058C4F9 /* todoList-VIPER */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4E93A502893DCA40058C4F9 /* Build configuration list for PBXNativeTarget "todoList-VIPER" */;
+			buildPhases = (
+				BCC9ECE5E16DAB80B91F95F9 /* [CP] Check Pods Manifest.lock */,
+				B4E93A222893DCA20058C4F9 /* Sources */,
+				B4E93A232893DCA20058C4F9 /* Frameworks */,
+				B4E93A242893DCA20058C4F9 /* Resources */,
+				48A82CD241E4022900A31C26 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "todoList-VIPER";
+			productName = "todoList-VIPER";
+			productReference = B4E93A262893DCA20058C4F9 /* todoList-VIPER.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B4E93A3B2893DCA40058C4F9 /* todoList-VIPERTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4E93A532893DCA40058C4F9 /* Build configuration list for PBXNativeTarget "todoList-VIPERTests" */;
+			buildPhases = (
+				A77EC86A2B7D63B2BBC9395F /* [CP] Check Pods Manifest.lock */,
+				B4E93A382893DCA40058C4F9 /* Sources */,
+				B4E93A392893DCA40058C4F9 /* Frameworks */,
+				B4E93A3A2893DCA40058C4F9 /* Resources */,
+				54558FF8983E907F51039E7B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B4E93A3E2893DCA40058C4F9 /* PBXTargetDependency */,
+			);
+			name = "todoList-VIPERTests";
+			productName = "todoList-VIPERTests";
+			productReference = B4E93A3C2893DCA40058C4F9 /* todoList-VIPERTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B4E93A452893DCA40058C4F9 /* todoList-VIPERUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4E93A562893DCA40058C4F9 /* Build configuration list for PBXNativeTarget "todoList-VIPERUITests" */;
+			buildPhases = (
+				D0F4E6AC9C13BD9FD91BB6C1 /* [CP] Check Pods Manifest.lock */,
+				B4E93A422893DCA40058C4F9 /* Sources */,
+				B4E93A432893DCA40058C4F9 /* Frameworks */,
+				B4E93A442893DCA40058C4F9 /* Resources */,
+				4FF0451A80E051466CFD6965 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B4E93A482893DCA40058C4F9 /* PBXTargetDependency */,
+			);
+			name = "todoList-VIPERUITests";
+			productName = "todoList-VIPERUITests";
+			productReference = B4E93A462893DCA40058C4F9 /* todoList-VIPERUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B4E93A1E2893DCA20058C4F9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					B4E93A252893DCA20058C4F9 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					B4E93A3B2893DCA40058C4F9 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = B4E93A252893DCA20058C4F9;
+					};
+					B4E93A452893DCA40058C4F9 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = B4E93A252893DCA20058C4F9;
+					};
+				};
+			};
+			buildConfigurationList = B4E93A212893DCA20058C4F9 /* Build configuration list for PBXProject "todoList-VIPER" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B4E93A1D2893DCA20058C4F9;
+			productRefGroup = B4E93A272893DCA20058C4F9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B4E93A252893DCA20058C4F9 /* todoList-VIPER */,
+				B4E93A3B2893DCA40058C4F9 /* todoList-VIPERTests */,
+				B4E93A452893DCA40058C4F9 /* todoList-VIPERUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B4E93A242893DCA20058C4F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4E93A362893DCA40058C4F9 /* LaunchScreen.storyboard in Resources */,
+				B4E93A332893DCA40058C4F9 /* Assets.xcassets in Resources */,
+				B4E93A312893DCA20058C4F9 /* Main.storyboard in Resources */,
+				B4262BF828A4BB720002D81F /* TodoTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4E93A3A2893DCA40058C4F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4E93A442893DCA40058C4F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		48A82CD241E4022900A31C26 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-todoList-VIPER/Pods-todoList-VIPER-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-todoList-VIPER/Pods-todoList-VIPER-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-todoList-VIPER/Pods-todoList-VIPER-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4FF0451A80E051466CFD6965 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-todoList-VIPER-todoList-VIPERUITests/Pods-todoList-VIPER-todoList-VIPERUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-todoList-VIPER-todoList-VIPERUITests/Pods-todoList-VIPER-todoList-VIPERUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-todoList-VIPER-todoList-VIPERUITests/Pods-todoList-VIPER-todoList-VIPERUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54558FF8983E907F51039E7B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-todoList-VIPERTests/Pods-todoList-VIPERTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-todoList-VIPERTests/Pods-todoList-VIPERTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-todoList-VIPERTests/Pods-todoList-VIPERTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A77EC86A2B7D63B2BBC9395F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-todoList-VIPERTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCC9ECE5E16DAB80B91F95F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-todoList-VIPER-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0F4E6AC9C13BD9FD91BB6C1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-todoList-VIPER-todoList-VIPERUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B4E93A222893DCA20058C4F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4262C1428A7C8730002D81F /* CalendarViewController.swift in Sources */,
+				B4262BD92894D7CC0002D81F /* TodoListProtocols.swift in Sources */,
+				B4262BD72894D7060002D81F /* Task.swift in Sources */,
+				B4262C1728A7CEAF0002D81F /* CalendarRouter.swift in Sources */,
+				B4262BF3289D17100002D81F /* TodoListLocalDataManager.swift in Sources */,
+				B4262BD52894D6ED0002D81F /* Todo.swift in Sources */,
+				B4262BFD28A62CBD0002D81F /* AddTaskViewController.swift in Sources */,
+				B4262BC82894D2850002D81F /* String+Extensions.swift in Sources */,
+				B4262C2228A7D0E50002D81F /* CalendarInteractor.swift in Sources */,
+				B4262BED28952B5F0002D81F /* TodoListViewModel.swift in Sources */,
+				B4262C1A28A7CEC80002D81F /* CalendarProtocols.swift in Sources */,
+				B4262BDD2894DB2E0002D81F /* TodoListViewController.swift in Sources */,
+				B4262BC62894D26B0002D81F /* Date+Extensions.swift in Sources */,
+				B4262BDB2894D8E70002D81F /* TodoListRouter.swift in Sources */,
+				B4262C0B28A63EBD0002D81F /* AddTodoInteractor.swift in Sources */,
+				B4E93A2A2893DCA20058C4F9 /* AppDelegate.swift in Sources */,
+				B4262BCA2894D2C50002D81F /* UIViewController+Extensions.swift in Sources */,
+				B4262C2028A7D0B00002D81F /* CalendarLocalDataManager.swift in Sources */,
+				B4262BFA28A4BBFB0002D81F /* TodoTableViewCell.swift in Sources */,
+				B4262BEB28952B480002D81F /* TodoViewModel.swift in Sources */,
+				B4262C0E28A63F010002D81F /* AddTodoLocalDataManager.swift in Sources */,
+				B4262BF628A4A7370002D81F /* Utility.swift in Sources */,
+				B4262BEF289D15950002D81F /* TodoListPresenter.swift in Sources */,
+				B4262C0928A63E3D0002D81F /* AddTodoPresenter.swift in Sources */,
+				B4262C2428A7D10F0002D81F /* CalendarPresenter.swift in Sources */,
+				B4262BF1289D165D0002D81F /* TodoListInteractor.swift in Sources */,
+				B4262C0128A637D70002D81F /* AddTodoProtocols.swift in Sources */,
+				B4262C0428A63A9D0002D81F /* AddTodoRouter.swift in Sources */,
+				B4E93A2C2893DCA20058C4F9 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4E93A382893DCA40058C4F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4E93A412893DCA40058C4F9 /* todoList_VIPERTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4E93A422893DCA40058C4F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4E93A4B2893DCA40058C4F9 /* todoList_VIPERUITests.swift in Sources */,
+				B4E93A4D2893DCA40058C4F9 /* todoList_VIPERUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B4E93A3E2893DCA40058C4F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B4E93A252893DCA20058C4F9 /* todoList-VIPER */;
+			targetProxy = B4E93A3D2893DCA40058C4F9 /* PBXContainerItemProxy */;
+		};
+		B4E93A482893DCA40058C4F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B4E93A252893DCA20058C4F9 /* todoList-VIPER */;
+			targetProxy = B4E93A472893DCA40058C4F9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B4E93A2F2893DCA20058C4F9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4E93A302893DCA20058C4F9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B4E93A342893DCA40058C4F9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4E93A352893DCA40058C4F9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B4E93A4E2893DCA40058C4F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B4E93A4F2893DCA40058C4F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B4E93A512893DCA40058C4F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDEDEE1B1AB581F182264B91 /* Pods-todoList-VIPER.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SUGYBZ6U9M;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "todoList-VIPER/Resources/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeRight UIInterfaceOrientationLandscapeLeft";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nytfury47.todoList-VIPER";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B4E93A522893DCA40058C4F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C6147A70CA35F1C35DA2FCF /* Pods-todoList-VIPER.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SUGYBZ6U9M;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "todoList-VIPER/Resources/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeRight UIInterfaceOrientationLandscapeLeft";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nytfury47.todoList-VIPER";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B4E93A542893DCA40058C4F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 614B8C1B0B94408559618476 /* Pods-todoList-VIPERTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SUGYBZ6U9M;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nytfury47.todoList-VIPERTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/todoList-VIPER.app/todoList-VIPER";
+			};
+			name = Debug;
+		};
+		B4E93A552893DCA40058C4F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E03FA85E5DE8BC6AA1D5FF6 /* Pods-todoList-VIPERTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SUGYBZ6U9M;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nytfury47.todoList-VIPERTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/todoList-VIPER.app/todoList-VIPER";
+			};
+			name = Release;
+		};
+		B4E93A572893DCA40058C4F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36B4FA9E2D7C2E2CEA1990E8 /* Pods-todoList-VIPER-todoList-VIPERUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SUGYBZ6U9M;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nytfury47.todoList-VIPERUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "todoList-VIPER";
+			};
+			name = Debug;
+		};
+		B4E93A582893DCA40058C4F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79576746DD95083A377C4CC6 /* Pods-todoList-VIPER-todoList-VIPERUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SUGYBZ6U9M;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nytfury47.todoList-VIPERUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "todoList-VIPER";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B4E93A212893DCA20058C4F9 /* Build configuration list for PBXProject "todoList-VIPER" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4E93A4E2893DCA40058C4F9 /* Debug */,
+				B4E93A4F2893DCA40058C4F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4E93A502893DCA40058C4F9 /* Build configuration list for PBXNativeTarget "todoList-VIPER" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4E93A512893DCA40058C4F9 /* Debug */,
+				B4E93A522893DCA40058C4F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4E93A532893DCA40058C4F9 /* Build configuration list for PBXNativeTarget "todoList-VIPERTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4E93A542893DCA40058C4F9 /* Debug */,
+				B4E93A552893DCA40058C4F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4E93A562893DCA40058C4F9 /* Build configuration list for PBXNativeTarget "todoList-VIPERUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4E93A572893DCA40058C4F9 /* Debug */,
+				B4E93A582893DCA40058C4F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B4E93A1E2893DCA20058C4F9 /* Project object */;
+}
